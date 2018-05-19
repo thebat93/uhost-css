@@ -111,6 +111,37 @@ body {
     margin: 32px;
 }
 
+.key-feature__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    /* Для того, чтобы сделать круг, скругляем края на 50% */
+    border-radius: 50%; 
+    /* Выравнивание div с display: block по середине */
+    margin: 0 auto;
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
 /* h1 {
     font-family: sans-serif;
 } */
