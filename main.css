@@ -156,6 +156,7 @@
     border-radius: 50%; 
     /* Выравнивание div с display: block по середине */
     margin: 0 auto;
+    padding: 20px;
 }
 
 .key-feature__description {
