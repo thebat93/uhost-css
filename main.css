@@ -1,6 +1,6 @@
 #product-overview {
     /* Картинка в качестве фона */
-    background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box, #ff1b68 ;
     /* Можно использовать несколько картинок */
     /* background-image: url("freedom.jpg"); */
     /* Размер картинки. Можно задавать в пикселях, процентах */
@@ -36,6 +36,14 @@
     /* scroll - Позволяет перемещаться фону вместе с содержимым. */
     /* local - Фон фиксируется с учётом поведения элемента. Если элемент имеет прокрутку, то фон будет прокручиваться вместе с содержимым, но фон выходящий за рамки элемента остаётся на месте. */
     /* background-attachment: fixed; */
+    /* Линейный градиент */
+    /* Первый аргумент: направление градиента (словами, углом) */
+    /* Второй аргумент: цвет (с процентом покрытия) */
+    /* background-image: linear-gradient(to left bottom, red, blue); */
+    /* Радиальный градиент */
+    /* Первый аргумент: форма (круг, эллипс), размер и позиция */
+    /* Второй аргумент: цвет (с процентом покрытия) */
+    /* background-image: radial-gradient(circle 50px at top, red, blue); */
     width: 100%;
     height: 528px;
     padding: 10px;
