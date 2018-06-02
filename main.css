@@ -1,6 +1,6 @@
 #product-overview {
     /* Картинка в качестве фона */
-    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box, #ff1b68 ;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 60%/cover no-repeat border-box, #ff1b68 ;
     /* Можно использовать несколько картинок */
     /* background-image: url("freedom.jpg"); */
     /* Размер картинки. Можно задавать в пикселях, процентах */
@@ -44,8 +44,8 @@
     /* Первый аргумент: форма (круг, эллипс), размер и позиция */
     /* Второй аргумент: цвет (с процентом покрытия) */
     /* background-image: radial-gradient(circle 50px at top, red, blue); */
-    width: 100%;
-    height: 528px;
+    width: 100vw;
+    height: 33vh;
     margin-top: 2.75rem;
     position: relative;
 }
