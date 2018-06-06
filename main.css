@@ -50,17 +50,44 @@
     position: relative;
 }
 
-.section-title {
-    color: #2ddf5c;
-    text-align: center;
-}
-
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
     position: absolute;
     bottom: 5%;
     left: 3%;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) {
+    /* Медиа-запрос на изменение высоты картинки при привышении ширины 40rem */
+    #product-overview {
+        height: 40vh;
+        background-position: 50% 25%;
+    }
+    
+    /* Медиа-запрос на изменение высоты шрифта при привышении ширины 40rem */
+    #product-overview h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    /* Медиа-запрос на изменение высоты картинки при привышении ширины 60rem */
+    #product-overview {
+        height: 50vh;
+        background-position: 50% 25%;
+    }
+    
+    /* Медиа-запрос на изменение высоты шрифта при привышении ширины 60rem */
+    #product-overview h1 {
+        font-size: 5rem;
+    }
+}
+
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
 }
 
 .plan__list {
