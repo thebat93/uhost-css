@@ -128,6 +128,12 @@ main {
     border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+    /* Анимация с помощью Keyframes */
+    /* Название / Продолжительность / Задержка / Количество повторений / Направление / Конечное состояние */
+    animation: wiggle 200ms 3s 8 none;
+}
+
 /* Ссылка Start Hosting ("Call To Action") */
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
@@ -265,3 +271,15 @@ main {
         justify-content: center;
       }
   }
+
+/* Кадры анимации */
+@keyframes wiggle {
+    /* Начальное состояние */
+    from {
+        transform: rotateZ(-10deg);
+    }
+    /* Конечное состояние */
+    to {
+        transform: rotateZ(10deg);
+    }
+}
