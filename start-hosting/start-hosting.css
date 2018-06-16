@@ -12,6 +12,9 @@ main {
     padding: 1rem;
     max-width: 25rem;
     margin: auto;
+    display: grid;
+    grid-auto-rows: 2rem;
+    grid-row-gap: 0.5rem;
 }
 
 .signup-form label {
@@ -22,7 +25,6 @@ main {
 .signup-form input,
 .signup-form select {
     display: block;
-    margin-top: 1rem;
     /* Для того, чтобы инпуты занимали все пространство блока */
     width: 100%;
 }
@@ -72,12 +74,24 @@ main {
 
 .signup-form button[type="submit"] {
     display: block;
-    margin-top: 1rem;
 }
 
 @media (min-width: 40rem) {
     .signup-form {
         margin: auto;
-        width: 25rem;
+        width: 30rem;
+        /* В Desktop-view используются две колонки */
+        grid-template-columns: 10rem auto;
+        /* Пустое пространство между строками */
+        grid-row-gap: 1rem;
+        grid-column-gap: 0.5rem;
+    }
+
+    .signup-form__checkbox {
+        grid-column: span 2;
+    }
+
+    .signup-form #title {
+        grid-column: span 2;
     }
 }
