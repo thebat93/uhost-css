@@ -18,6 +18,7 @@ main {
     width: 80%;
     margin: 1rem 0;
     position: relative;
+    overflow: hidden;
 }
 
 .package a {
@@ -44,9 +45,13 @@ main {
     background: #ff5454;
     padding: 0.5rem;
     /* Поворот элемента на 45 градусов относительно оси Z */
-    transform: rotateZ(45deg);
+    /* Перемещение вдоль оси X (относительно элемента)*/
+    /* Перемещение вдоль оси Y (относительно элемента)*/
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
     /* Относительно какой точки производить поворот */
     transform-origin: center;
+    width: 12rem;
+    text-align: center;
 }
 
 .package__title {
