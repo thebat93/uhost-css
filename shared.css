@@ -19,7 +19,8 @@ body {
     display: grid;
     /* Разметка трех областей: пэддинг хедера, контент и футер */
     /* Работает для элементов с position: static */
-    grid-template-rows: 3.5rem auto 8rem;
+    /* fit-content: берет минимальный размер и увеличивает его если контент не влезает */
+    grid-template-rows: 3.5rem auto fit-content(8rem);
     /* Разметка с помощью областей */
     /* grid-template-areas: "header"
                          "main"
@@ -28,8 +29,6 @@ body {
 }
 
 main {
-    /* min-height: calc(100vh - 3.5rem - 8rem); */
-    margin-top: 3.5rem;
     /* Начинается со второй линии, заканчивается на третьей */
     grid-row: 2 / 3;
     /* Разметка с помощью областей */
