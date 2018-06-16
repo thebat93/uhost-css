@@ -45,9 +45,8 @@ main {
     background: #ff5454;
     padding: 0.5rem;
     /* Поворот элемента на 45 градусов относительно оси Z */
-    /* Перемещение вдоль оси X (относительно элемента)*/
-    /* Перемещение вдоль оси Y (относительно элемента)*/
-    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    /* Перемещение вдоль оси X и Y (относительно элемента)*/
+    transform: rotate(45deg) translate(3.5rem, -1rem);
     /* Относительно какой точки производить поворот */
     transform-origin: center;
     width: 12rem;
