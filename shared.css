@@ -63,6 +63,10 @@ main {
     top: 0;
     left: 0;
     z-index: 60;
+    /* Vendor Prefixes */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-between;
