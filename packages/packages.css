@@ -38,11 +38,15 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 1.2rem;
+    margin: 0;
     font-size: 0.8rem;
     color: white;
     background: #ff5454;
     padding: 0.5rem;
+    /* Поворот элемента на 45 градусов относительно оси Z */
+    transform: rotateZ(45deg);
+    /* Относительно какой точки производить поворот */
+    transform-origin: center;
 }
 
 .package__title {
