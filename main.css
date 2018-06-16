@@ -201,7 +201,15 @@
 
 .modal {
     position: fixed;
-    display: none;
+    /* Начальное состояние */
+    opacity: 0;
+    transform: translateY(-3rem);
+    /* Переход */
+    /* 1. какие свойства наблюдать */
+    /* 2. длительность */
+    /* 3. тайминговая функция */
+    /* 4. задержка */
+    transition: opacity 200ms ease-out, transform 500ms ease-out;
     z-index: 200;
     top: 20%;
     left: 30%;
