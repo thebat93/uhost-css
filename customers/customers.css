@@ -12,15 +12,20 @@ main {
   } */
   
 .testimonial__image-container {
-    width: 100%;
+    width: 60%;
     max-width: 40rem;
     box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+    /* Вытягивает элемент по оси X на 20 градусов */
+    transform: skew(20deg);
+    overflow: hidden;
 }
 
 .testimonial__image {
     width: 100%;
     /* Чтобы убрать белую полосу снизу */
     vertical-align: top;
+    /* Вытягивает элемент по оси X на -20 градусов и увеличивает по X и Y */
+    transform: skew(-20deg) scale(1.4);
 }
 
   .testimonial__info {
