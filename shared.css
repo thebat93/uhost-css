@@ -22,16 +22,24 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    display: grid;
-    /* Разметка трех областей: пэддинг хедера, контент и футер */
-    /* Работает для элементов с position: static */
-    /* fit-content: берет минимальный размер и увеличивает его если контент не влезает */
-    grid-template-rows: 3.5rem auto fit-content(8rem);
-    /* Разметка с помощью областей */
-    /* grid-template-areas: "header"
-                         "main"
-                         "footer"; */
-    height: 100%;
+    padding-top: 3.5rem;
+}
+
+/* Проверка поддержки свойств */
+@supports (display: grid) {
+    body {
+        display: grid;
+        /* Разметка трех областей: пэддинг хедера, контент и футер */
+        /* Работает для элементов с position: static */
+        /* fit-content: берет минимальный размер и увеличивает его если контент не влезает */
+        grid-template-rows: 3.5rem auto fit-content(8rem);
+        /* Разметка с помощью областей */
+        /* grid-template-areas: "header"
+                             "main"
+                             "footer"; */
+        padding-top: 0;
+        height: 100%;
+    }
 }
 
 main {
