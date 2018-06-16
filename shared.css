@@ -130,8 +130,8 @@ main {
 
 .main-nav__item--cta {
     /* Анимация с помощью Keyframes */
-    /* Название / Продолжительность / Задержка / Количество повторений / Направление / Конечное состояние */
-    animation: wiggle 200ms 3s 8 none;
+    /* Название / Продолжительность / Задержка / Количество повторений / Тайминговая функция / Направление / Конечное состояние */
+    animation: wiggle 400ms 3s 8 ease-out none;
 }
 
 /* Ссылка Start Hosting ("Call To Action") */
@@ -275,11 +275,16 @@ main {
 /* Кадры анимации */
 @keyframes wiggle {
     /* Начальное состояние */
-    from {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    
+    50% {
         transform: rotateZ(-10deg);
     }
+
     /* Конечное состояние */
-    to {
+    100% {
         transform: rotateZ(10deg);
     }
 }
