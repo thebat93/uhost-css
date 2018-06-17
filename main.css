@@ -202,9 +202,8 @@
 .modal {
     position: fixed;
     /* Начальное состояние */
-    display: none;
     opacity: 0;
-    transform: translateY(-3rem);
+    transform: translateX(-50%) translateY(-30rem);
     /* Переход */
     /* 1. какие свойства наблюдать */
     /* 2. длительность */
@@ -213,8 +212,8 @@
     transition: opacity 200ms ease-out, transform 500ms ease-out;
     z-index: 200;
     top: 20%;
-    left: 30%;
-    width: 40%;
+    left: 50%;
+    width: 60%;
     background: white;
     padding: 1rem;
     border: 1px solid #ccc;

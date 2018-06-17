@@ -276,13 +276,11 @@ main {
 .open {
     display: block !important;
     opacity: 1 !important;
-    transform: translateY(0) !important;
+    /* transform: translateY(0) !important; */
 }
 
 .modal.open {
     transform: translateX(-50%) translateY(0) !important;
-    left: 50%;
-    width: 60%;
 }
 
 @media (min-width: 40rem) {
